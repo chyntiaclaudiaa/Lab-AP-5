@@ -1,5 +1,6 @@
 #include <iostream>
-#include <cstdlib>
+#include <iomanip>
+#include <string>
 
 using namespace std;
 
@@ -20,8 +21,8 @@ int main() {
 
     cout << "Masukkan IPK: ";
     cin >> ipk;
+    cout << fixed << setprecision(2);
 
-    system("cls");
     cout << "\nBerikut Adalah Data Anda:\n";
     cout << "Nama : " << nama << endl;
     cout << "NIM  : " << nim << endl;
