@@ -21,7 +21,7 @@ int main () {
     = T and F
     = F yang bernilai sama dengan 0*/
     bool result_A = (3 - 1 < I) || (K - 5 < 8 + 2) && (L + 7 >= 9 + 3);
-    cout<< "3 - 1 < I or K - 5 < 8 + 2 and L + 7 >= 9 + 3 = " << result_A << endl;
+    cout<< "hasil 3 - 1 < I or K - 5 < 8 + 2 and L + 7 >= 9 + 3 adalah " << result_A << endl;
 
     /*Perhitungan Manual pada soal 1 B :
     1 % 3 = 1 
@@ -32,7 +32,7 @@ int main () {
     = F or F
     = F yang bernilai sama dengan 0 */
     bool result_B = (L % 3 > U) && ((C/U < S) || (3 * I - K > 0));
-    cout << "(L % 3 > U) and (C/U<S or 3*I-K>0) = "<< result_B << endl;
+    cout << "hasil (L % 3 > U) and (C/U<S or 3*I-K>0) adalah "<< result_B << endl;
     
     /*Perhitungan Manual pada soal no 1 C
     2 - 9 = -7
@@ -42,7 +42,7 @@ int main () {
     = F or T 
     = T yang bernilai sama dengan 1*/
     bool result_C = (I - 9 > K ) || ((L + 3) < (4 * C));
-    cout << "I - 9 > K or L + 3 < 4 * C = "<< result_C << endl;
+    cout << "hasil I - 9 > K or L + 3 < 4 * C adalah "<< result_C << endl;
 
     /*Perhitungan Manual pada soal no 1 D 
     pengerjaan berdasarkan prioritas yaitu shl,and,xor,or
@@ -51,7 +51,7 @@ int main () {
     1 ^ 12 = 0001 ^ 1100 = 1101 (13 dalam desimal)
     2 | 13 = 0010 | 1101 = 1111 (15 dalam desimal)*/
     int result_D = I | K & L ^ 3 << 2 ;
-    cout << "I or K and L xor 3 shl 2 = " << result_D << endl; 
+    cout << "hasil I or K and L xor 3 shl 2 adalah " << result_D << endl; 
     
     return 0;
 }
