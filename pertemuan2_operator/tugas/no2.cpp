@@ -12,7 +12,7 @@ int main()
     cout << "Input nilai B : "; cin >> b;
     cout << "Input nilai C : "; cin >> c;
 
-    //menghitung nilai diskriminan dari nilai yang di input oleh user 
+    //menghitung nilai diskriminan dari nilai yang di input oleh user agar lebih mudah dalam penyeleksian akar imajiner
     double D = pow(b,2) - 4 * a * c;
 
     if (D >= 0) {
@@ -20,7 +20,7 @@ int main()
         x2 = (-b - sqrt(D)) / (2 * a);
         cout << "Dari persamaan Ax2 + Bx + C = 0 di peroleh x1 = " << x1 << " dan x2 = " << x2 << endl;
     } else {
-        cout << "Akar-akar dari persamaan ini tidak valid karna merupakan akar-akar imajiner." << endl;
+        cout << "Akar-akar dari persamaan ini tidak valid karna merupakan akar-akar imajiner karena memiliki determinan "<< D <<"." << endl;
     }
 
     return 0;

@@ -3,12 +3,7 @@ using namespace std;
 int main () {
     system ("CLS");
 
-    int I = 2;
-    int K = 7;
-    int L = 1;
-    int C = 9; 
-    int U = 5; 
-    int S = 6; 
+    int I = 2, K = 7, L = 1, C = 9, U = 5, S = 6; 
 
     /*Perhitungan Manual pada soal 1 A :
     3 - 1 = 2
