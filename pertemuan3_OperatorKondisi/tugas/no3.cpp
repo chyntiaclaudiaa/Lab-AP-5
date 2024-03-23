@@ -10,6 +10,7 @@ int main() {
     cin >> tb;
     tbtot = (((tb*100) / 100) * ((tb * 100) / 100));
     bmi = bb / tbtot;
+    cout << fixed << setprecision (2);
     cout << "BMI anda: " << bmi;
     cout << "\nKategori Berat badan : ";
     if (bmi < 18.5) {
