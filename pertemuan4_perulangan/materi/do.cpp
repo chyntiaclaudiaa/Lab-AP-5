@@ -7,7 +7,7 @@ int main() {
     do
     {
         cout << "Hellow world";
-    } while (x > 10);
+    } while (x >= 15);
     
     
     return 0;

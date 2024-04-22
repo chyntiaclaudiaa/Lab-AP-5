@@ -11,7 +11,7 @@ int main()
 
     for (int i = 0; i < tinggi; i++)
     {
-        for (int j = tinggi; j > i + 1; i++)
+        for (int j = tinggi; j > i + 1; j--)
         {
             cout << " ";
         }
