@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-    system("CLS");
+    system("cls");
 
     int n;
     cout << "Masukkan hingga suku ke: "; // meminta inputan pengguna
