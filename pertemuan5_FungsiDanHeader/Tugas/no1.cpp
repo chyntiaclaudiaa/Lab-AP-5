@@ -18,12 +18,11 @@ string hitungDeret(int x, int &bilakhir)
     {
         int deretsgt = (i * (i + 1));
         hasil += fizzBuzz(deretsgt); // Menggunakan fungsi fizzBuzz untuk setiap nilai dalam deret
-        if (i != x)
-        {
+        if (i != x){
             hasil += ", ";
         }
-        if (deretsgt % 3 != 0 && deretsgt % 5 != 0)
-        {
+        
+        if (deretsgt % 3 != 0 && deretsgt % 5 != 0){
             bilakhir = deretsgt; //ini untuk menyimpan nilai akhir yang tidak memenuhi aturan fizzbuz untuk dipakai di tipe data
         }
     }
@@ -36,8 +35,7 @@ int main()
     cout << "Masukkan angka : ";
     cin >> x;
 
-    if (x < 3 || x > 100)
-    {
+    if (x < 3 || x > 100){
         cout << "Input tidak valid, berikan nilai dengan rentang 3 - 100" << endl;
         return 1;
     }
