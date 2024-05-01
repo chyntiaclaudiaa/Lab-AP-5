@@ -10,23 +10,21 @@ string fizzBuzz(int x)
     return hasil;
 }
 
-// Fungsi untuk menghitung deret dan mengembalikan string yang berisi hasil FizzBuzz dari deret tersebut
-string hitungDeret(int x, int &bilakhir)
+// Fungsi untuk menghitung deret dan menyimpan hasil FizzBuzz dari deret tersebut ke dalam parameter referensi
+void hitungDeret(int x, string &hasilDeret, int &bilakhir)
 {
-    string hasil = "";
     for (int i = 1; i <= x; i++)
     {
         int deretsgt = (i * (i + 1));
-        hasil += fizzBuzz(deretsgt); // Menggunakan fungsi fizzBuzz untuk setiap nilai dalam deret
+        hasilDeret += fizzBuzz(deretsgt); // Menggunakan fungsi fizzBuzz untuk setiap nilai dalam deret
         if (i != x){
-            hasil += ", ";
+            hasilDeret += ", ";
         }
         
         if (deretsgt % 3 != 0 && deretsgt % 5 != 0){
-            bilakhir = deretsgt; //ini untuk menyimpan nilai akhir yang tidak memenuhi aturan fizzbuz untuk dipakai di tipe data
+            bilakhir = deretsgt; // Ini untuk menyimpan nilai akhir yang tidak memenuhi aturan fizzbuz untuk dipakai di tipe data
         }
     }
-    return hasil;
 }
 
 int main()
@@ -41,7 +39,8 @@ int main()
     }
 
     int bilakhir = 0;
-    string hasilDeret = hitungDeret(x, bilakhir);
+    string hasilDeret;
+    hitungDeret(x, hasilDeret, bilakhir);
 
     cout << hasilDeret << endl;
     cout << "Tipe data dari " << bilakhir << " adalah " << typeid(bilakhir).name() << endl; // menggunakan library typeinfo untuk mengecek tipe data
