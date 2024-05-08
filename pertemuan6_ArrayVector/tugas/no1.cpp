@@ -4,7 +4,7 @@
 using namespace std;
 
 // Fungsi untuk segitiga pascal
-long long segitigaPascal(int n, int k)
+long long sgtpascal(int n, int k)
 {
     if (k > n - k){
         k = n - k;
@@ -17,7 +17,7 @@ long long segitigaPascal(int n, int k)
     return hasil;
 }
 
-// Fungsi untuk menampilkan di output nnti
+// Fungsi untuk tampilkan di output
 void tampilkan(int t)
 {
     for (int baris = 0; baris < t; ++baris){
@@ -25,7 +25,7 @@ void tampilkan(int t)
             cout << " ";
         }
         for (int kolom = 0; kolom <= baris; ++kolom){
-            cout << segitigaPascal(baris, kolom) << " ";
+            cout << sgtpascal(baris, kolom) << " ";
         }
         cout << endl;
     }
@@ -55,7 +55,7 @@ int main()
         return 1;
     }
 
-    long long nilai = segitigaPascal(x - 1, y - 1);
+    long long nilai = sgtpascal(x - 1, y - 1);
     cout << "Nilai pada indeks [" << x << "][" << y << "] = " << nilai << endl;
 
     system("pause");
